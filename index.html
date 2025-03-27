@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Learning Blog</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Sidebar Toggle Button -->
@@ -14,20 +15,21 @@
     <!-- Sidebar Menu -->
     <nav id="sidebar">
         <div class="sidebar-header">
-            <h2>My Blog</h2>
+            <h2><a href="index.html">My Blog</a></h2>
         </div>
         <ul>
             <li><a href="#dataStructures">Data Structures</a></li>
-            <li><a href="#research">Araştırmalarım</a></li>
-            <li><a href="#books">Okuduğum Kitaplar</a></li>
+            <li><a href="pages/research.html">Araştırmalarım</a></li>
             <li><a href="#discrete">Discrete Math</a></li>
             <li><a href="#concept">Concepts of Programming Languages</a></li>
             <li><a href="#testQuality">Test and Quality Assurance</a></li>
             <li><a href="pages/empowerHER.html">EmpowerHER Programı</a></li>
-            <li><a href="#cscn25">CSCN<>'25</a></li>
-            <li><a href="#aybüHuk">Havacılık ve Uzay Zirvesi</a></li>
-            <li><a href="#bio">Biyografik Araştırmalar</a></li>
+            <li><a href="pages/cscn25.html">CSCN<>'25</a></li>
+            <li><a href="pages/aybüHuk.html">Havacılık ve Uzay Zirvesi</a></li>
+            <li><a href="pages/bio.html">Biyografik Araştırmalar</a></li>
             <li><a href="#books">Okuduğum Kitaplar</a></li>
+            <li><a href="#aboutme.html">Hakkımda</a></li>
+        </ul>
         </ul>
     </nav>
 
@@ -50,13 +52,13 @@
         <h2>En Son Düzenlediğim Bölümler</h2>
         <section class="posts">
             <div class="post-card">
-                <h3><a href="math.html">Data Structures</a></h3>
+                <h3><a href="#math.html">Data Structures</a></h3>
             </div>
             <div class="post-card">
-                <h3><a href="research.html">Araştırmalarım</a></h3>
+                <h3><a href="pages/research.html">Araştırmalarım</a></h3>
             </div>
             <div class="post-card">
-                <h3><a href="books.html">Okuduğum Kitaplar</a></h3>
+                <h3><a href="#books.html">Okuduğum Kitaplar</a></h3>
             </div>
         </section>
     </div>
@@ -65,13 +67,6 @@
     <footer>
         <p>&copy; 2025 Ayse Atik</p>
     </footer>
-
-    <script src="script.js"></script>
-    <script>
-        document.querySelector('.sidebar-toggle').addEventListener('click', function() {
-    document.querySelector('#sidebar').classList.toggle('active');
-    });
-    </script>
     
 </body>
 </html>

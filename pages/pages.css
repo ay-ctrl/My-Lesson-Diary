@@ -9,14 +9,134 @@ body {
 }
 
 header {
-    background-color: #f4c2c2;
+    background-color: #f6c1e4;
     padding: 20px;
     border-radius: 0 0 15px 15px;
 }
 
 h1 {
-    color: #7a3b3b;
+    color: #070707;
 }
+
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    display: none;
+}
+
+.sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #f6c1e4;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%; /* Tam ekran boyutu */
+    background-color: #f6c1e4;
+    padding-top: 30px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transform: translateX(-250px); /* Başlangıçta gizli */
+    overflow-y: auto; /* Dikey scrollbar ekler */
+    scrollbar-width: thin; /* Firefox için scrollbarı ince yapar */
+    scrollbar-color: #e8a9cb #f6c1e4; /* Firefox için scrollbar rengi */
+    z-index: 1000;
+}
+
+/* Webkit tarayıcılar (Chrome, Edge) için scrollbar özelleştirme */
+#sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #e8a9cb;
+    border-radius: 4px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: #f6c1e4;
+}
+
+
+
+#sidebar.active {
+    transform: translateX(0); /* Sidebar appears when 'active' class is added */
+}
+
+.sidebar-header h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    bottom:50px;
+}
+
+.sidebar-header h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+    align-content: center;
+}
+
+#sidebar ul li a:hover {
+    background-color: #e8a9cb;
+    height: 40px;
+}
+
+/* Main Content */
+#main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
 
 .topics {
     display: grid;
@@ -35,5 +155,11 @@ h1 {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(222, 116, 206, 0.2);
 }
+
+
+
+
+
+

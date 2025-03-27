@@ -12,6 +12,25 @@ body {
     color: #333;
 }
 
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    display: none;
+}
+
+.sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #f6c1e4;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
 /* Sidebar Styles */
 #sidebar {
     position: fixed;
@@ -24,6 +43,24 @@ body {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     transform: translateX(-250px); /* Başlangıçta gizli */
+    overflow-y: auto; /* Dikey scrollbar ekler */
+    scrollbar-width: thin; /* Firefox için scrollbarı ince yapar */
+    scrollbar-color: #e8a9cb #f6c1e4; /* Firefox için scrollbar rengi */
+    z-index: 1000;
+}
+
+/* Webkit tarayıcılar (Chrome, Edge) için scrollbar özelleştirme */
+#sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #e8a9cb;
+    border-radius: 4px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: #f6c1e4;
 }
 
 
@@ -35,9 +72,15 @@ body {
     text-align: center;
     font-size: 1.8rem;
     color: white;
+    text-decoration: none;
     margin-bottom: 10px;
     margin-left: 20px;
     padding-top: 10px;
+}
+
+.sidebar-header h2 a{
+    color: white;
+    text-decoration: none;
 }
 
 #sidebar ul {
@@ -175,34 +218,4 @@ footer p {
     color: #fff;
 }
 
-/* Sidebar Toggle Button */
-.sidebar-toggle {
-    display: none;
-}
 
-
-.sidebar-toggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #f6c1e4;
-    color: #fff;
-    font-size: 2rem;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 2000;
-}
-
-#main-content {
-    margin-left: 0;
-}
-
-#sidebar {
-    transform: translateX(-250px); /* Initially hidden */
-}
-
-#sidebar.active {
-    transform: translateX(0); /* Sidebar appears when 'active' class is added */
-}
