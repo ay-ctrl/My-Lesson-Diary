@@ -158,7 +158,19 @@ header p {
     box-shadow: 5px 5px 15px rgba(222, 116, 206, 0.2);
 }
 
+/* Footer */
+footer {
+    background-color: #eba4d4;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+}
 
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
 
 
 
