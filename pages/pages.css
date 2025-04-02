@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow-x: hidden; /* Yatay kaymayı engeller */
 }
 
 header {
@@ -137,6 +138,14 @@ header p {
     color: #555;
 }
 
+a {
+    color: #db74d8;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+  
 
 .topics {
     display: grid;
