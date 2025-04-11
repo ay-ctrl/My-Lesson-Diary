@@ -12,6 +12,25 @@ body {
     color: #333;
 }
 
+/* Header Styling */
+header {
+    background-color: #f1c6d7; /* Pastel pink background */
+    color: #5c3d5c; /* Darker shade for text */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e2a9b2; /* Soft pink border */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
 /* Sidebar Toggle Button */
 .sidebar-toggle {
     display: none;
@@ -112,23 +131,6 @@ body {
     padding: 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-top: 70px;
-    padding-bottom: 50px;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
 /* Post Cards */
 .posts {
     display: grid;
@@ -202,19 +204,21 @@ header p {
     }
 }
 
-/* Footer */
+/* Footer styling */
 footer {
-    background-color: #eba4d4;
+    background-color: #f1c6d7;
+    color: #5c3d5c;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
+    border-top: 3px solid #e2a9b2;
+    padding: 10px 0;
+    position: absolute;
     bottom: 0;
+    width: 100%; 
 }
 
 footer p {
-    font-size: 1rem;
-    color: #fff;
+    margin: 0;
+    font-size: 1.1em;
 }
 
 

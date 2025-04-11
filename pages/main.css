@@ -1,0 +1,62 @@
+
+
+main {
+    width: 100%;
+    max-width: 1300px; /* <-- Burası önemli */
+    margin: 40px 0 40px 40px; /* sola yapışık, sağda boşluk */
+    padding: 0 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    background: none;
+    text-align: left;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+main ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: none; /* <- bu satır iki noktayı engeller */
+}
+
+main ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    position: relative;
+    padding-left: 20px;
+}
+
+main ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #856404;
+    font-weight: 600;
+}
